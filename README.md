@@ -26,8 +26,9 @@ This commands includes
 • Other IP Commands e.g. show ip route etc.
 <BR>
 ## PROGRAM
+
+## Server.py
 ```
-Server.py
 import socket
 from pythonping import ping
 s = socket.socket()
@@ -49,8 +50,9 @@ while True:
     except:
         c.send("Host Not Found".encode())
 c.close()
-
-Client.py
+```
+## Client.py
+```
 import socket
 # Create socket
 s = socket.socket()
@@ -69,7 +71,6 @@ Traceroute.py
 import os
 print("Running Traceroute...\n")
 os.system("C:\\Windows\\System32\\tracert.exe google.com")
-```
 ```
 ## Output
 <img width="924" height="373" alt="Screenshot 2026-05-25 224818" src="https://github.com/user-attachments/assets/86fe7222-178e-42c1-993a-7d0b6bb432e2" />
